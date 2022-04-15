@@ -8,7 +8,7 @@ class TeamRandomiserCard extends Component {
 
         return (
             <div className={"card " + className} style={style} {...otherProps}>
-                <h4 className="card-header">Team Randomiser</h4>
+                <h4 className="card-header">Ulafatlar Uchun! </h4>
 
                 <TeamRandomiser className="p-2"/>
             </div>

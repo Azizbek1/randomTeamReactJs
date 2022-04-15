@@ -85,7 +85,7 @@ class TeamRandomiser extends React.Component {
         return (
             <form className={className} onSubmit={(event) => this.onFormSubmit(event)} {...otherProps}>
                 <div className="d-flex justify-content-between mb-2">
-                    <h6 className="mb-0 align-self-center">Number of teams</h6>
+                    <h6 className="mb-0 align-self-center">Nechta <b>kamandaga</b> bo'linishi: </h6>
                     <input
                         onInput={event => this.onTeamCountChange(event)}
                         className="w-25 form-control"
@@ -96,15 +96,15 @@ class TeamRandomiser extends React.Component {
                 </div>
 
                 <div>
-                    <h6>Team members:</h6>
+                    <h6><b>Kamandani</b> isimlarni yozing: </h6>
                     <textarea
                         ref={(element) => (this.textArea = element)}
                         className="form-control d-block mb-2"
                         placeholder="John Smith, Jane Smith"
-                        style={{resize: "none"}}
+                        style={{resize: "none", height: "200px"}}
                     />
                 </div>
-                <input type="submit" className="btn btn-success" value="Randomise!"/>
+                <input type="submit" className="btn btn-success" value="Random bo'lmoq!"/>
 
                 {errors.length > 0 ? <ErrorRenderer errors={errors} className="my-2 d-block"/> : null}
                 {teams.length > 0 ? (<TeamRenderer teams={teams} className="mt-2 mb-1"/>) : null}
